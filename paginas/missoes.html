@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="icon" href="../imgs/black_hole_icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/missoes/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/missoes/missionsContent.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+    <!-- ION ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="h_contents">
+            <div class="h_li">
+                <a href="../index.html">home</a>
+            </div>
+
+            <div class="h_li">
+                <a href="#">nasa</a>
+            </div>
+
+            <div class="h_li">
+                <a href="#">universo</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./missoes.html">missões</a>
+            </div>
+
+            <div class="h_li">
+                <a href="#">sitema solar</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="dropdown-content" onclick="dropdownMenu()">
+            <ion-icon id="menu" class="ionIcon" name="menu"></ion-icon>
+            <ion-icon id="closeMenu" class="ionIcon" name="close-outline"></ion-icon>
+        </div>
+
+        <div id="dropdownMenu">
+            <div class="navbar flex" onclick="closeDropMenu()">
+                <a href="./index.html">home</a>
+                <a href="#">nasa</a>
+                <a href="#">universo</a>
+                <a href="#">missões</a>
+                <a href="#">sistema solar</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="main" class="flex">
+
+        <div id="imgContainer" class="flex">
+            <img src="../imgs/missoes/gateway-with-earth-in-background.webp" alt="Este arquivo é um WEBP">
+            <div class="overlay"></div>
+        </div>
+
+        <div id="slogan" class="flex">
+            <div class="heading flex">
+                <h1>missões</h1>
+            </div>
+
+            <div class="social flex">
+                <p>
+                    Explorando os segredos do universo para o benefício de todos. Investigar o desconhecido no ar e no
+                    espaço, inova para o bem da humanidade e inspira o mundo por meio da descoberta.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="missionsContainer" class="flex">
+
+        <div id="allMissions" class="flex">
+
+            <a href="https://www.nasa.gov/nasa-missions/" target="_blank" class="flex">
+                <h3>Veja todas as Missões</h3>
+                <span class="rotateIcon">
+                    <ion-icon name="arrow-forward-circle" size="large"></ion-icon>
+                </span>
+            </a>
+
+        </div>
+
+        <div id="missionsContent" class="flex">
+            <h1>Missões</h1>
+            <p>Explorar os segredos do universo para o beneficios de todos</p>
+
+            <div id="missionsCards" class="flex">
+
+                <a class="missionCard flex" href="https://www.nasa.gov/nasa-missions/">
+                    <div class="missionImgContainer">
+                        <img class="missionCardImg" src="../imgs/missoes/artemis.jpg" alt="Artemis II"
+                            title="Esta imagem é um JPG">
+                    </div>
+
+                    <h3 class="missionTitle"> Artemis II</h3>
+
+                    <p class="missionTxt">
+                        Quatro astronautas irão viajar ao redor da Lua na missão Artemis II, a primeira missão
+                        tripulada
+                        no caminho da NASA para estabelecer uma presença de longo prazo na Lua para ciência e
+                        exploração.
+                    </p>
+
+
+                    <h2 class="missionBtn flex">
+                        Saiba mais
+                        <span>
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </span>
+                    </h2>
+                </a>
+
+                <a class="missionCard flex" href="https://www.nasa.gov/nasa-missions/">
+                    <div class="missionImgContainer">
+                        <img class="missionCardImg" src="../imgs/missoes/comercialCrew.webp" alt="Commercial Crew"
+                            title="Esta imagem é um WEBP">
+                    </div>
+
+                    <h3 class="missionTitle">Commercial Crew</h3>
+
+                    <p class="missionTxt">
+                        O Programa de Tripulação Comercial da NASA está cumprindo seu objetivo de transporte humano
+                        seguro, confiável e econômico para e da Estação Espacial Internacional.
+                    </p>
+
+
+                    <h2 class="missionBtn flex">
+                        Saiba mais
+                        <span>
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </span>
+                    </h2>
+                </a>
+
+                <a class="missionCard flex" href="https://www.nasa.gov/nasa-missions/">
+                    <div class="missionImgContainer">
+                        <img class="missionCardImg" src="../imgs/missoes/hst.jpg" alt="Hubble Space Telescope"
+                            title="Esta imagem é um JPG">
+                    </div>
+
+                    <h3 class="missionTitle">Hubble Space Telescope</h3>
+
+                    <p class="missionTxt">
+                        Desde seu lançamento em 1990, o Telescópio Espacial Hubble mudou nossa compreensão fundamental
+                        do universo.
+                    </p>
+
+
+                    <h2 class="missionBtn flex">
+                        Saiba mais
+                        <span>
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </span>
+                    </h2>
+                </a>
+
+                <a class="missionCard flex" href="https://www.nasa.gov/nasa-missions/">
+                    <div class="missionImgContainer">
+                        <img class="missionCardImg" src="../imgs/missoes/jwst.webp" alt="James Webb Space Telescope"
+                            title="Esta imagem é um WEBP">
+                    </div>
+
+                    <h3 class="missionTitle">James Webb Space Telescope</h3>
+
+                    <p class="missionTxt">
+                        O Webb é o principal observatório da próxima década, servindo milhares de astrônomos em todo o
+                        mundo. Ele estuda todas as fases da história do nosso universo.
+                    </p>
+
+
+                    <h2 class="missionBtn flex">
+                        Saiba mais
+                        <span>
+                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </span>
+                    </h2>
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <footer id="footer" class="flex">
+
+        <h3 class="section_title">- Apoie nossa causa -</h3>
+        <h1>Compartilhe com amigos</h1>
+        <h3>Ajude a divulgar ciência</h3>
+
+        <div class="social_logo_content flex">
+
+            <div class="social_logo">
+                <a href="https://www.youtube.com/@SpaceToday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.instagram.com/spacetoday/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.tiktok.com/@spacetoday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <p>Copyright © 2024 | All Rights Reserved | Built by <span id="creator"><a
+                    href="https://gldhperes.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Guilherme
+                    Peres</a></span></p>
+
+    </footer>
+
+    <a id="arrowUp" class="flex" href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="js/dropdownMenu.js"></script>
+</body>
+
+
+</html>

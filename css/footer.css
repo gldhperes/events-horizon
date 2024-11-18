@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 #footer{
-    padding: 30px 0;
-    text-transform: uppercase;
+    width: 100%;
+    padding: var(--sections_default_padding) 0;
+    padding-bottom: 30px;
 
     flex-flow: column;
     gap: 30px;
-    background-color: #0f0f0f;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: var(--footer-color);
 }
 
 #creator{
@@ -15,26 +19,5 @@
 }
 
 #creator>a{
-    
     color: white;
-=======
-#footer{
-    padding: 30px 0;
-    text-transform: uppercase;
-
-    flex-flow: column;
-    gap: 30px;
-    background-color: #0f0f0f;
-}
-
-#creator{
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-#creator>a{
-    
-    color: white;
->>>>>>> 07bc293a7096ce4b2972d96bcac3177d5e80c215
 }

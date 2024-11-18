@@ -1,0 +1,84 @@
+#main {
+    /* position: absolute; */
+}
+
+
+/* VIDEO CONTAINNER */
+
+#videoContainer {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+
+video {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* SLOGAN  */
+
+#slogan {
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: larger;
+
+    flex-flow: column;
+    gap: 100px;
+}
+
+.heading {
+    width: 100%;
+    flex-flow: column;
+    gap: 30px;
+}
+
+.heading>h1 {
+    width: 100%;
+    color: orange;
+
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 900;
+    /* font-size: larger; */
+}
+
+/* SOCIAL */
+.social {
+    flex-flow: column;
+    gap: 60px;
+}
+
+.social_logo_container {
+    flex-flow: column;
+    gap: 20px;
+}
+
+.social_logo_content {
+    gap: 50px;
+}
+
+.social_logo{
+    cursor: pointer;
+}
+
+.social_logo > a > ion-icon {
+    width: var(--social_logo);
+    height: var(--social_logo);
+
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social_logo > a > ion-icon:hover {
+    transform: translateY(-10px);
+    color: orange;
+}
+
+#seta-down{
+    width: var(--social_logo);
+    height: var(--social_logo);
+}
