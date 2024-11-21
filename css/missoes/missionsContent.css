@@ -1,42 +1,14 @@
 #missionsContainer {
     flex-flow: column;
-    padding: var(--sections_default_padding) 0;
+    padding: var(--sections_default_padding);
 }
-
-/* ALL MISSIONS */
-
-#allMissions{
-    width: 100%;
-    padding: 30px;
-    justify-content: flex-end;
-}
-
-
-#allMissions>a{
-    color: white;
-    gap: 10px;
-}
-
-#allMissions>a:hover{
-    color: orange;
-}
-
-.rotateIcon{
-    display: inline-block;
-    transform: rotate(-45deg); 
-    color: orange;
-
-}
-
-
-
 
 
 /* MISSIONS */
 
 #missionsContent {
     width: 100%;
-    padding: 0 var(--sections_default_padding);
+    /* padding: 0 var(--sections_default_padding); */
 
     flex-flow: column;
     gap: 20px;
@@ -61,6 +33,7 @@
     width: 100%;
     margin-top: 50px;
 
+    justify-content: flex-start;
     gap: 50px;
 }
 

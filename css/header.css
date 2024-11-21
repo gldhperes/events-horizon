@@ -83,13 +83,10 @@
 /* h_contents  */
 .h_contents{
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    padding: 1% 0;
-    /* background-color: aqua; */
+  
+    justify-content: space-between;
+    
+    padding: 10px 0;
 }
 
 .h_li{
@@ -102,12 +99,15 @@
     font-size: medium;
     font-weight: bolder;
     letter-spacing: 3px;
+
+    text-align: center;
     text-transform: uppercase;
 
     &:hover{
         color: orange;
     }
 }
+
 
 .h_li:hover{
     color: #000000;

@@ -91,23 +91,6 @@
 
 /* DIVISOR */
 
-.divisor {
-    width: 90%;
-    /* height: 1px; */
-
-    /* background-color: none; */
-    justify-content: space-between;
-
-    position: relative;
-}
-
-.divisor>div {
-    width: 40%;
-    height: 1px;
-
-    background-color: white;
-}
-
 .divisorTop {
     top: calc(var(--sections_default_padding) * -1);
 }

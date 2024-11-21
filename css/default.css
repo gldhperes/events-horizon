@@ -82,6 +82,69 @@ li {
     pointer-events: none;
 }
 
+/* LINK BTN */
+.linkBtnContainer {
+    width: 100%;
+    padding: 20px 0;
+    justify-content: flex-end;
+}
+
+.linkBtn {
+    color: white;
+    gap: 10px;
+}
+
+.linkBtn:hover {
+    color: orange;
+}
+
+.rotateIcon {
+    display: inline-block;
+    transform: rotate(-45deg);
+    color: orange;
+}
+
+
+/* DIVISOR */
+
+.divisor {
+    width: 90%;
+    /* height: 1px; */
+
+    /* background-color: none; */
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.divisor>div {
+    width: 40%;
+    height: 1px;
+
+    background-color: white;
+}
+
+/* IFRAME */
+
+.iframeVideo {
+    width: 100%;
+    height: 600px;
+
+    align-items: flex-start;
+}
+
+.iframeVideo>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* ARROW */
+
 #arrowUp {
     position: fixed;
     z-index: 5;

@@ -21,3 +21,25 @@
 #creator>a{
     color: white;
 }
+
+/* SOCIAL LOGO */
+.social_logo_content {
+    gap: 50px;
+}
+
+.social_logo{
+    cursor: pointer;
+}
+
+.social_logo > a > ion-icon {
+    width: var(--social_logo);
+    height: var(--social_logo);
+
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social_logo > a > ion-icon:hover {
+    transform: translateY(-10px);
+    color: orange;
+}
